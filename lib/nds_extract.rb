@@ -25,4 +25,5 @@ def directors_totals(nds)
   nil
 end
 
-puts directors_database[0][:name]
+hash = {directors_database[0][:name] => "lol"}
+puts hash
