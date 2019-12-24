@@ -27,5 +27,5 @@ def directors_totals(nds)
 end
 
 hash = {directors_database[0][:name] => 42}
-puts hash
-gross_for_director(directors_database[0])
+puts "Expecting to see #{hash}"
+puts "Outputs: #{gross_for_director(directors_database[0])}"
