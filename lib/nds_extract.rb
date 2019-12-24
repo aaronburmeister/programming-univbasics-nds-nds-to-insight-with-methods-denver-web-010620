@@ -10,7 +10,7 @@ def gross_for_director(director_data)
     gross += director_data[:movies][movie][:worldwide_gross]
     movie += 1
   end
-  return {director_data[:name] => gross }
+  gross
 end
 
 # Write a method that, given an NDS creates a new Hash
@@ -21,12 +21,9 @@ def directors_totals(nds)
   result = {}
   director_count = 0
   while director_count < nds.length do
-    result << gross_for_director(nds[director_count])
+    result[nds[director_count][:name]]  gross_for_director(nds[director_count])
   end
   nil
 end
 
-hash = {directors_database[0][:name] => 42}
-puts "Expecting to see #{hash}"
-puts directors_database[0][:movies][0][:worldwide_gross]
-puts "Outputs: #{gross_for_director(directors_database[0])}"
+puts "Steven Spielberg: #{gross_for_director(directors_database[0])}"
