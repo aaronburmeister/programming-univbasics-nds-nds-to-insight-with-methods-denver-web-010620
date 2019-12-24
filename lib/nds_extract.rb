@@ -15,7 +15,6 @@ end
 
 # Write a method that, given an NDS creates a new Hash
 # The return value should be like:
-#
 # { directorOne => allTheMoneyTheyMade, ... }
 def directors_totals(nds)
   result = {}
@@ -27,4 +26,4 @@ def directors_totals(nds)
   #nil
 end
 
-puts "Steven Spielberg: #{gross_for_director(directors_database[0])}"
+directors_totals(directors_database)
