@@ -24,7 +24,6 @@ def directors_totals(nds)
     director_count += 1
   end
   result
-  #nil
 end
 
 directors_totals(directors_database)
