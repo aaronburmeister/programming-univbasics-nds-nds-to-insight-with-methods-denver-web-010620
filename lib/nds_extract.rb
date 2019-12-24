@@ -28,4 +28,5 @@ end
 
 hash = {directors_database[0][:name] => 42}
 puts "Expecting to see #{hash}"
+puts directors_database[0][:movies][0][:worldwide_grosses]
 puts "Outputs: #{gross_for_director(directors_database[0])}"
