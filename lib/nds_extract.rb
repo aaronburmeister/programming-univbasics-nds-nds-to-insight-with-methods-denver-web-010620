@@ -7,7 +7,7 @@ def gross_for_director(director_data)
   gross = 0
   movie = 0
   while movie < director_data[:movies].length do
-    gross += director_data[:movies][movie][:worldwide_grosses]
+    gross += director_data[:movies][movie][:worldwide_gross]
     movie += 1
   end
   return {director_data[:name] => gross }
@@ -28,5 +28,5 @@ end
 
 hash = {directors_database[0][:name] => 42}
 puts "Expecting to see #{hash}"
-puts directors_database[0][:movies][0][:worldwide_grosses]
+puts directors_database[0][:movies][0][:worldwide_gross]
 puts "Outputs: #{gross_for_director(directors_database[0])}"
