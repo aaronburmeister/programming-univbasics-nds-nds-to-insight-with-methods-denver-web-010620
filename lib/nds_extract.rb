@@ -27,6 +27,4 @@ end
 
 hash = {directors_database[0][:name] => 42}
 puts hash
-hash2 = {}
-hash2.merge(hash)
-puts hash2
+gross_for_director(directors_database[0])
