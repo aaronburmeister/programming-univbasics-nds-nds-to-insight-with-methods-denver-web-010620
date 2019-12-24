@@ -25,4 +25,4 @@ def directors_totals(nds)
   nil
 end
 
-puts directors_database[0]
+puts { directors_database[0][:name]: 5000 }
