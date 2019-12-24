@@ -28,5 +28,5 @@ end
 hash = {directors_database[0][:name] => 42}
 puts hash
 hash2 = {}
-hash2  hash
+hash2.merge(hash)
 puts hash2
